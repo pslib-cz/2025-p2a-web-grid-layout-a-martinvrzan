@@ -77,9 +77,10 @@
 }
 
 .layout{
-    min-height: 100dvh - 2 * 0.75rem;
+    min-height: calc(100dvh - 2 * 0.75rem);
     display: grid;
     gap: 1em;
+    grid-template-rows: min-content auto min-content;
     grid-template-areas:
     "header"
     "nav"
